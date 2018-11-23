@@ -1,0 +1,16 @@
+.logo{
+	-fx-background-image: url(worldide.png);
+	-fx-background-size: cover, auto;
+}
+
+.mytext{
+    -fx-font-family: 'Roboto Mono', monospace;
+    /*-fx-font-family: "Shadows Into Light";*/
+    
+}
+.mytitle{
+    -fx-font-family: 'Roboto Mono', monospace;
+    /*-fx-font-family: "Shadows Into Light";*/
+    -fx-font-size: 50.0;
+    
+}
