@@ -1,0 +1,48 @@
+.forest{
+	-fx-background-image: url(blueforest.jpg);
+	-fx-background-size: cover, auto;
+}
+.fotoPerf{
+	-fx-background-image: url(profilephoto.png);
+	-fx-background-size: cover, auto;
+}
+.mybutton {
+	-fx-background-color: orange;
+	-fx-text-fill: white;
+	-fx-border-color: orange;
+	-fx-border-radius: 10px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-radius: 10px;
+}
+
+.rootPane{
+    /*-fx-background-image: url(."backgroung.jpg");*/
+	-fx-background-color: linear-gradient(#FF851D, #ffa2b1);
+    
+}
+
+.mybutton:hover {
+	-fx-background-color: red;
+	-fx-border-color: red;
+}
+.mytext{
+    -fx-font-family: 'Poiret One', cursive;
+	-fx-font-size: 15.0;
+    
+}
+.mytitle{
+    -fx-font-family: 'Poiret One', cursive;
+    -fx-font-size: 30.0;
+    
+}
+.mytitle2Page{
+    -fx-font-family: 'Poiret One', cursive;
+    -fx-font-size: 50.0;
+    
+}
+.mytext2Page{
+    -fx-font-family: 'Poiret One', cursive;
+	-fx-font-size: 20.0;
+    
+}

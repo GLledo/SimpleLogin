@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="500.0" styleClass="rootPane" stylesheets="@../control/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.control.ControlFX">
+   <children>
+      <GridPane alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="500.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="120.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../control/profilephoto.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TOP" styleClass="mytitle2Page" text="Form" textAlignment="JUSTIFY" textFill="#e49d22">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="mytext" text="Fill in the fields to continue" textFill="#4d4747" />
+                  <JFXTextField focusColor="#d10606" labelFloat="true" promptText="Where do you live?" styleClass="mytext2Page" unFocusColor="#0d0d0d" />
+                  <JFXTextField focusColor="#d10606" labelFloat="true" promptText="How old are you?" styleClass="mytext2Page" unFocusColor="#1e1d1d" />
+                  <JFXTextField focusColor="#d10606" labelFloat="true" promptText="Where do you study?" styleClass="mytext2Page" unFocusColor="#282727" />
+                  <HBox alignment="CENTER">
+                     <children>
+                        <JFXButton onAction="#close" prefHeight="31.0" prefWidth="226.0" style="-fx-background-color: FF5459;" styleClass="mytext" text="CLOSE">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin></JFXButton>
+                        <JFXButton prefHeight="41.0" prefWidth="228.0" style="-fx-background-color: #9CFF69;" styleClass="mytext" text="SEND">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin></JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
